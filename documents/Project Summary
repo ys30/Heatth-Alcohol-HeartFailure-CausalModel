@@ -6,10 +6,12 @@ This study examines the association between alcohol consumption and congestive h
 
 Data Source and Study Population
 Data were drawn from the National Health and Nutrition Examination Survey (NHANES) 2017–March 2020 (cycle P_), a complex, multistage probability sample of the non-institutionalized U.S. population. Multiple NHANES modules were merged using the unique respondent identifier (SEQN), including demographics, alcohol use, medical conditions, anthropometrics, smoking, physical activity, diet, and comorbidity questionnaires.
+
 The analytic sample was restricted to:
 •	Adults aged ≥21 years
 •	Non-missing alcohol use, poverty-income ratio (PIR), body mass index (BMI), and CHF outcome
 •	Complete data on key covariates for each respective model
+
 Exposure, Outcome, and Key Variables
 Exposure (Alcohol use):
 Alcohol consumption was derived from ALQ121 and recoded into a binary variable:
@@ -35,6 +37,7 @@ Models adjusted for:
 •	Smoking history (≥100 cigarettes)
 •	Moderate physical activity
 •	Composite comorbidity indicator (any_comorb), defined as presence of diabetes, liver disease, cancer, or kidney disease
+
 Statistical Analysis
 1.	Descriptive and Bivariate Analysis
 o	Continuous variables were compared using t-tests
@@ -64,6 +67,7 @@ Supplementary outputs include:
 •	SES-specific 2×2 contingency tables
 •	Event count summaries by alcohol group and SES
 •	VIF/GVIF diagnostics for adjusted models
+
 Contribution
 This project provides a transparent, design-appropriate assessment of alcohol consumption and CHF risk in U.S. adults, explicitly accounting for socioeconomic heterogeneity and comorbidity burden. By contrasting unweighted and survey-weighted results and reporting cell-level event counts, the analysis emphasizes interpretability, robustness, and alignment with NHANES analytic best practices.
 
