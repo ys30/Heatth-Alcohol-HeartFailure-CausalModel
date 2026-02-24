@@ -82,3 +82,35 @@ Fully adjusted models demonstrated improved model fit (lower AIC).
 Effect size stability increased after covariate adjustment.
 
 Overall, results highlight the importance of socioeconomic context when evaluating alcohol-related cardiovascular risk.
+
+## Repository Structure
+Alcohol-HeartFailure-CausalModel/
+
+├── scripts/
+
+│   ├── 00_setup.R
+
+│   ├── 01_analysis_main.R
+
+│   ├── 02_dag_model.R
+
+│   └── 99_utils.R
+
+## Reproducibility
+
+Run:
+
+scripts/01_analysis_main.R
+scripts/02_dag_model.R
+
+## Assumptions and Limitations
+
+Observational data cannot establish causality definitively.
+
+Self-reported alcohol consumption may introduce measurement bias.
+
+Residual confounding may remain.
+
+## Reference
+
+This project is based on U.S. adult population health data and standard epidemiologic modelling approaches.
