@@ -1,0 +1,69 @@
+Project Summary 
+Alcohol Consumption, Socioeconomic Status, and Congestive Heart Failure in U.S. Adults (NHANES 2017–2020)
+
+Study Objective
+This study examines the association between alcohol consumption and congestive heart failure (CHF) among U.S. adults, with particular emphasis on socioeconomic status (SES) differences. Using nationally representative NHANES data, we evaluate whether alcohol–CHF associations persist after adjustment for demographic, behavioral, and clinical covariates, and whether results differ under unweighted versus survey-weighted analyses.
+
+Data Source and Study Population
+Data were drawn from the National Health and Nutrition Examination Survey (NHANES) 2017–March 2020 (cycle P_), a complex, multistage probability sample of the non-institutionalized U.S. population. Multiple NHANES modules were merged using the unique respondent identifier (SEQN), including demographics, alcohol use, medical conditions, anthropometrics, smoking, physical activity, diet, and comorbidity questionnaires.
+The analytic sample was restricted to:
+•	Adults aged ≥21 years
+•	Non-missing alcohol use, poverty-income ratio (PIR), body mass index (BMI), and CHF outcome
+•	Complete data on key covariates for each respective model
+Exposure, Outcome, and Key Variables
+Exposure (Alcohol use):
+Alcohol consumption was derived from ALQ121 and recoded into a binary variable:
+•	High: responses 1–4
+•	Low: responses 8–10
+Invalid responses (77, 99) were excluded.
+Outcome (CHF):
+Congestive heart failure was defined using MCQ160B:
+•	1 = ever told had CHF
+•	0 = never told had CHF
+Socioeconomic Status (SES):
+SES was operationalized using the Poverty-Income Ratio (INDFMPIR):
+•	Low (<1)
+•	Middle (1 to <4)
+•	High (≥4)
+Covariates:
+Models adjusted for:
+•	Age (continuous)
+•	Gender
+•	Race/ethnicity
+•	Education
+•	BMI category (Underweight, Normal, Overweight, Obese)
+•	Smoking history (≥100 cigarettes)
+•	Moderate physical activity
+•	Composite comorbidity indicator (any_comorb), defined as presence of diabetes, liver disease, cancer, or kidney disease
+Statistical Analysis
+1.	Descriptive and Bivariate Analysis
+o	Continuous variables were compared using t-tests
+o	Categorical variables were compared using χ² tests
+o	Bivariate screening identified covariates associated with alcohol use or CHF (p < 0.20)
+2.	Multivariable Logistic Regression (Unweighted)
+o	Crude model: CHF ~ alcohol use
+o	Adjusted model: alcohol use + SES + demographic, behavioral, and clinical covariates
+o	SES-stratified adjusted models estimated alcohol–CHF odds ratios separately within Low, Middle, and High SES groups
+3.	Survey-Weighted Logistic Regression
+o	NHANES survey design was incorporated using SDMVPSU, SDMVSTRA, and WTINTPRP
+o	Weighted crude and weighted adjusted models were fitted using svyglm with a quasibinomial link
+o	Results were compared to unweighted estimates to assess robustness and population-level inference
+4.	Model Diagnostics and Validity Checks
+o	Multicollinearity assessed using VIF/GVIF (including BMI category and comorbidity)
+o	Cell counts and event frequencies were examined within each SES stratum to identify sparse data or zero-cell risks
+o	Event counts (overall and SES-specific) were explicitly reported to contextualize estimate stability
+Reporting and Outputs
+The primary output is a consolidated “ultimate results table” summarizing:
+•	Odds ratios (ORs) for high vs. low alcohol consumption
+•	95% confidence intervals
+•	p-values
+•	Model type (crude, adjusted, SES-stratified)
+•	Design (unweighted vs. survey-weighted)
+•	SES stratum (overall or Low/Middle/High)
+Supplementary outputs include:
+•	SES-specific 2×2 contingency tables
+•	Event count summaries by alcohol group and SES
+•	VIF/GVIF diagnostics for adjusted models
+Contribution
+This project provides a transparent, design-appropriate assessment of alcohol consumption and CHF risk in U.S. adults, explicitly accounting for socioeconomic heterogeneity and comorbidity burden. By contrasting unweighted and survey-weighted results and reporting cell-level event counts, the analysis emphasizes interpretability, robustness, and alignment with NHANES analytic best practices.
+
